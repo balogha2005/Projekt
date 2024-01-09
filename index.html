@@ -1,54 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-
-	<title>Reflex játék</title>
-
-	<meta charset="utf-8" />
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Reflex Játék</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Ide kerül a CSS kód */
+    </style>
 </head>
 <body>
-
-	<div id="container" class="centered">
-
-		<h1 id="title" class="centered">REFLEX JÁTÉK</h1>
-
-
-		<div id="innerContainer">
-
-			<div id="options">
-
-
-
-				<button id="startButton">INDÍT</button>
-
-				<button id="endButton">VÉGE</button>
-
-				<button id="resetButton">RESET</button>
-
-
-				<p id="score" class="centered">Idő: <span id="result">0.00</span>s</p>
-
-				<p id="highScore" class="centered">Rekord: <span id="highScoreResult">0.00</span>s</p>
-
-			</div>
-
-			<div id="gameField">
-
-				<div id="box"></div>
-
-			</div>
+    <div class="container">
+        <h1>Reflex Játék</h1>
+        <div class="form-group">
+            <label for="difficulty">Nehézségi szint:</label>
+            <select class="form-control" id="difficulty">
+                <option value="easy">Könnyű</option>
+                <option value="normal">Normál</option>
+                <option value="hard">Nehéz</option>
+            </select>
+        </div>
+        <button id="startButton" class="btn btn-primary">Indítás</button>
+        <button id="stopButton" class="btn btn-danger">Megállítás</button>
+        <button id="resetButton" class="btn btn-secondary">Visszaállítás</button>
+        <div id="gameArea" class="mt-3">
+            <!-- Ide kerülnek az alakzatok -->
+        </div>
+        <p>Idő: <span id="time">0</span> másodperc</p>
+        <p>Rekord: <span id="record">0</span> másodperc</p>
+    </div>
 
 
-		</div>
-
-
-	</div>
-
-
-	<script type="text/javascript" src="js/reflex-game.js"></script>
+        <script type="text/javascript" src="js/fixed_reflex-game.js"></script>
 
 </body>
 </html>
