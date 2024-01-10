@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <title>Reflex Játék</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        /* Ide kerül a CSS kód */
-    </style>
 </head>
 <body>
     <div class="container">
@@ -24,14 +21,14 @@
         <button id="stopButton" class="btn btn-danger">Megállítás</button>
         <button id="resetButton" class="btn btn-secondary">Visszaállítás</button>
         <div id="gameArea" class="mt-3">
-            <!-- Ide kerülnek az alakzatok -->
+            
         </div>
-        <p>Idő: <span id="time">0</span> másodperc</p>
-        <p>Rekord: <span id="record">0</span> másodperc</p>
+        <p class="time-record">Idő: <span id="time">0</span> másodperc</p>
+        <p class="time-record record-right">Rekord: <span id="record">0</span> másodperc</p>
     </div>
 
 
-        <script type="text/javascript" src="js/fixed_reflex-game.js"></script>
+        <script type="text/javascript" src="js/reflex.js"></script>
 
 </body>
 </html>
