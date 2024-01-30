@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Reflex Játék</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Valentine's Proposal</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Reflex Játék</h1>
-        <div class="form-group">
-            <label for="difficulty">Nehézségi szint:</label>
-            <select class="form-control" id="difficulty">
-                <option value="easy">Könnyű</option>
-                <option value="normal">Normál</option>
-                <option value="hard">Nehéz</option>
-            </select>
+        <div class="Mainprompt">
+            <img class="image" src="images/catflower.jpg"></img>
+            <h1 class="hh" id="name">Heoo minimi!</h1>
+            <p class="pp" id="question">Leszel a Valentinom?</p>
+            <div class="buttons">
+                <button id="no-button" onclick="showMessage('No')">Nem</button>
+                <button onclick="showMessage('Yes')" id="yesButton">Igen</button>
+            </div>
+            <div class="hidden-message" id="no-message">
+                <p>Mitmonc nincs ilyen opció!</p>
+            </div>
+            <div class="hidden-message" id="yes-message">
+                <p>Muhahahha tali 14.-én csipletem!</p>
+            </div>
         </div>
-        <button id="startButton" class="btn btn-primary">Indítás</button>
-        <button id="stopButton" class="btn btn-danger">Megállítás</button>
-        <button id="resetButton" class="btn btn-secondary">Visszaállítás</button>
-        <div id="gameArea" class="mt-3">
-            
-        </div>
-        <p class="time-record">Idő: <span id="time">0</span> másodperc</p>
-        <p class="time-record record-right">Rekord: <span id="record">0</span> másodperc</p>
     </div>
-
-
-        <script type="text/javascript" src="js/reflex.js"></script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
